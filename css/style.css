@@ -1,0 +1,96 @@
+body {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  height: 100vh;
+  
+  background: #025e53; /* fallback for old browsers */
+  
+  background: -webkit-linear-gradient(
+    to right,
+    #025e53,
+    #009688
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  
+  background: linear-gradient(
+    to right,
+    #025e53,
+    #009688
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  background-size: cover;
+  width: 820px;
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: whitesmoke;
+  margin-bottom: 5px;
+  font-size: 64px;
+  background: -webkit-linear-gradient(white, whitesmoke);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: 24px;
+  background: -webkit-linear-gradient(white, whitesmoke);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  margin-bottom: 5px;
+  font-size: 18px;
+  background: -webkit-linear-gradient(white, whitesmoke);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subsubtitle {
+  font-size: 16px;
+  background: -webkit-linear-gradient(white, whitesmoke);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 16px;
+}
+
+a:link {
+  color: yellowgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.creds {
+  width: 100%;
+  padding-top: 10px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: whitesmoke;
+  margin-bottom: 20px;
+}
