@@ -1,19 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keep Me Out</title>
-  <link rel="stylesheet" href="https://shadygoneinsane.github.io/css/style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Me Out</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body>
-  <div class="container">
-	<h2>Welcome to keep me out application home page
-	This webpage is still under construction</h2>
+<body class="font-poppins bg-gray-100 text-gray-800">
 
- </container>
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-xl font-bold text-gray-800">Keep Me Out</a>
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-gray-800">Features</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-blue-600 text-white py-20 px-6 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-bold mb-4">Keep Me Out</h1>
+            <p class="text-xl mb-8">Take control of your screen time</p>
+            <a href="#"
+                class="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                Get it on Google Play
+            </a>
+        </div>
+    </section>
+
+    <!-- App Features Section -->
+    <section id="features" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-500 mb-4">
+                        <!-- Placeholder for icon -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Time Tracking</h3>
+                    <p class="text-gray-600">Understand your habits and take control.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-500 mb-4">
+                        <!-- Placeholder for icon -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">App Blocking</h3>
+                    <p class="text-gray-600">Stay focused by blocking distracting apps.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-500 mb-4">
+                        <!-- Placeholder for icon -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Usage Reports</h3>
+                    <p class="text-gray-600">Get insights into your digital wellbeing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section id="screenshots" class="bg-gray-200 py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">App Screenshots</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Placeholder for screenshots -->
+                <div class="bg-white h-64 rounded-lg shadow-lg flex items-center justify-center text-gray-500">Screenshot 1 Placeholder</div>
+                <div class="bg-white h-64 rounded-lg shadow-lg flex items-center justify-center text-gray-500">Screenshot 2 Placeholder</div>
+                <div class="bg-white h-64 rounded-lg shadow-lg flex items-center justify-center text-gray-500">Screenshot 3 Placeholder</div>
+                <div class="bg-white h-64 rounded-lg shadow-lg flex items-center justify-center text-gray-500">Screenshot 4 Placeholder</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section id="reviews" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">What Our Users Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"This app changed my life! I'm so much more productive now."</p>
+                    <p class="font-bold">- Happy User</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"Finally, an app that helps me stay focused. Highly recommended!"</p>
+                    <p class="font-bold">- Productive Person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-200 py-16 px-6" x-data="{ openAccordion: null }">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-2xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-lg">
+                    <button @click="openAccordion === 1 ? openAccordion = null : openAccordion = 1" class="w-full text-left p-4 font-semibold flex justify-between items-center">
+                        How does Keep Me Out work?
+                        <span x-text="openAccordion === 1 ? '-' : '+'" class="text-xl"></span>
+                    </button>
+                    <div x-show="openAccordion === 1" x-collapse class="p-4 text-gray-600 text-left">
+                        Keep Me Out helps you by allowing you to lock yourself out of your device for a specified time period.
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-lg">
+                    <button @click="openAccordion === 2 ? openAccordion = null : openAccordion = 2" class="w-full text-left p-4 font-semibold flex justify-between items-center">
+                        Is it available for iOS?
+                        <span x-text="openAccordion === 2 ? '-' : '+'" class="text-xl"></span>
+                    </button>
+                    <div x-show="openAccordion === 2" x-collapse class="p-4 text-gray-600 text-left">
+                        Currently, Keep Me Out is only available for Android devices.
+                    </div>
+                </div>
+                 <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-lg">
+                    <button @click="openAccordion === 3 ? openAccordion = null : openAccordion = 3" class="w-full text-left p-4 font-semibold flex justify-between items-center">
+                        How can I uninstall the app?
+                        <span x-text="openAccordion === 3 ? '-' : '+'" class="text-xl"></span>
+                    </button>
+                    <div x-show="openAccordion === 3" x-collapse class="p-4 text-gray-600 text-left">
+                        You can find uninstallation instructions <a href="kmo-uninstall.html" class="text-blue-500 hover:underline">here</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Support Section -->
+    <section id="contact" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="text-gray-600 mb-8">Have questions or need support? Reach out to us.</p>
+            <a href="mailto:support@keepmeout.app"
+                class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                Email Support
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center">
+        <div class="container mx-auto">
+            <p class="mb-4">&copy; 2024 Keep Me Out. All rights reserved.</p>
+            <div class="space-x-4">
+                <!-- Replace # with actual social media links -->
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+                <a href="#" class="hover:text-gray-400">Instagram</a>
+            </div>
+             <p class="mt-4 text-sm text-gray-400">
+                <a href="kmo-privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+                <a href="kmo-changelog.html" class="hover:underline">Changelog</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
-<footer>
-  <p class="creds">©By Vikesh Dass</p>
-</footer>
+</html>
