@@ -11,7 +11,7 @@
     "type-check": "tsc --noEmit",
     "build:analyze": "ANALYZE=true next build",
     "clean": "rm -rf .next out",
-    "export": "next build",
+    "export": "next export",
     "test": "jest"
   },
   "dependencies": {
