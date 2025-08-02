@@ -2,26 +2,30 @@ import React from 'react'
 import { Mail, ExternalLink } from 'lucide-react'
 import Logo from '@/components/ui/Logo'
 import Section from '@/components/ui/Section'
+import BackToTopButton from '@/components/ui/BackToTopButton'
 import { FOOTER_NAVIGATION } from '@/data/navigation'
 import { APP_CONFIG } from '@/constants/app'
+import { UI_TEXT } from '@/config/ui'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
   
   return (
-    <Section background="gray" padding="lg" className="bg-gray-900 text-white">
+    <>
+      <BackToTopButton />
+      <Section background="gray" padding="lg" className="footer-dark">
       <div className="grid md:grid-cols-4 gap-8 mb-8">
         <div>
           <div className="mb-4">
             <Logo variant="default" showText size="md" className="text-white" />
           </div>
           <p className="text-gray-400">
-            Take control of your digital life with privacy-first design and powerful focus tools.
+            {UI_TEXT.footer.tagline}
           </p>
         </div>
         
         <div>
-          <h4 className="font-semibold mb-4">App</h4>
+          <h4 className="font-semibold mb-4">{UI_TEXT.sections.app}</h4>
           <ul className="space-y-2 text-gray-400">
             {FOOTER_NAVIGATION.app.map((item) => (
               <li key={item.id}>
@@ -42,7 +46,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div>
-          <h4 className="font-semibold mb-4">Legal</h4>
+          <h4 className="font-semibold mb-4">{UI_TEXT.sections.legal}</h4>
           <ul className="space-y-2 text-gray-400">
             {FOOTER_NAVIGATION.legal.map((item) => (
               <li key={item.id}>
@@ -58,7 +62,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div>
-          <h4 className="font-semibold mb-4">Support</h4>
+          <h4 className="font-semibold mb-4">{UI_TEXT.sections.support}</h4>
           <ul className="space-y-2 text-gray-400">
             {FOOTER_NAVIGATION.support.map((item) => (
               <li key={item.id}>
@@ -82,7 +86,8 @@ const Footer: React.FC = () => {
       <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
         <p>&copy; {currentYear} {APP_CONFIG.NAME} by {APP_CONFIG.AUTHOR}. All rights reserved.</p>
       </div>
-    </Section>
+      </Section>
+    </>
   )
 }
 

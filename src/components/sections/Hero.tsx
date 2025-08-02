@@ -6,6 +6,7 @@ import { Download } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Section from '@/components/ui/Section'
 import { APP_CONFIG, ASSETS, ROUTES, EXTERNAL_LINKS } from '@/constants/app'
+import { UI_TEXT } from '@/config/ui'
 
 const Hero: React.FC = () => {
   const fadeInUp = {
@@ -18,21 +19,21 @@ const Hero: React.FC = () => {
     <Section background="gradient" padding="lg">
       <div className="text-center">
         <motion.h1 
-          className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+          className="heading-hero mb-6"
           {...fadeInUp}
         >
-          {APP_CONFIG.TAGLINE.split(' ').slice(0, 4).join(' ')}{' '}
+          {UI_TEXT.hero.tagline.split(' ').slice(0, 4).join(' ')}{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-            {APP_CONFIG.TAGLINE.split(' ').slice(-2).join(' ')}
+            {UI_TEXT.hero.tagline.split(' ').slice(-2).join(' ')}
           </span>
         </motion.h1>
         
         <motion.p 
-          className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
+          className="text-subtitle mb-8 max-w-3xl mx-auto"
           {...fadeInUp}
           transition={{ delay: 0.2 }}
         >
-          {APP_CONFIG.DESCRIPTION}
+          {UI_TEXT.hero.description}
         </motion.p>
         
         <motion.div 
@@ -48,7 +49,7 @@ const Hero: React.FC = () => {
             className="animate-pulse"
             isExternal
           >
-            Download on Google Play
+            {UI_TEXT.buttons.downloadGooglePlay}
           </Button>
           
           <Button
@@ -56,7 +57,7 @@ const Hero: React.FC = () => {
             variant="secondary"
             size="lg"
           >
-            Learn More
+            {UI_TEXT.buttons.learnMore}
           </Button>
         </motion.div>
         
@@ -69,14 +70,14 @@ const Hero: React.FC = () => {
             <div className="relative">
               <img
                 src={ASSETS.SCREENSHOTS.QUICK_LOCK}
-                alt="Keep Me Out Quick Lock Feature"
+                alt={UI_TEXT.alt.quickLock}
                 className="rounded-2xl shadow-2xl mx-auto w-full max-w-xs"
               />
             </div>
             <div className="relative">
               <img
                 src={ASSETS.SCREENSHOTS.SCHEDULE}
-                alt="Keep Me Out Schedule Feature"
+                alt={UI_TEXT.alt.schedule}
                 className="rounded-2xl shadow-2xl mx-auto w-full max-w-xs"
               />
             </div>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { APP_CONFIG, ASSETS, ROUTES } from '@/constants/app'
 
 interface LogoProps {
-  variant?: 'default' | 'black' | 'icon'
+  variant?: 'default' | 'icon'
   size?: 'sm' | 'md' | 'lg'
   showText?: boolean
   className?: string
@@ -17,14 +17,13 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
   const logoSrc = {
     default: ASSETS.LOGO,
-    black: ASSETS.LOGO_BLACK,
     icon: ASSETS.LOGO_ICON,
   }
   
   const sizeClasses = {
-    sm: 'w-6 h-6',
-    md: 'w-8 h-8',
-    lg: 'w-12 h-12',
+    sm: 'w-5 h-5',
+    md: 'w-7 h-7',
+    lg: 'w-10 h-10',
   }
   
   const textSizeClasses = {

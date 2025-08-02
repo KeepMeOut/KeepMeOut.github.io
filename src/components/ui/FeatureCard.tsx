@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Feature } from '@/types'
+import { UI_TEXT } from '@/config/ui'
 
 interface FeatureCardProps {
   feature: Feature
@@ -25,7 +26,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ feature, index = 0 }) => {
         <img
           src={feature.iconPath}
           alt={`${feature.title} icon`}
-          className="w-12 h-12"
+          className="w-14 h-14"
         />
       </div>
       
@@ -33,7 +34,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ feature, index = 0 }) => {
         {feature.title}
         {feature.isComingSoon && (
           <span className="ml-2 text-sm font-normal text-accent-600 bg-accent-100 px-2 py-1 rounded-full">
-            Coming Soon
+            {UI_TEXT.labels.comingSoon}
           </span>
         )}
       </h3>

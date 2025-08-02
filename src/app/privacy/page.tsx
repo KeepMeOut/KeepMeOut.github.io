@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Mail, ExternalLink } from 'lucide-react'
+import { UI_TEXT } from '@/config/ui'
+import { APP_CONFIG, ASSETS, EXTERNAL_LINKS } from '@/constants/app'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -15,21 +17,21 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="header-blur">
+        <div className="container-max">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-2">
               <img
-                src="/logo.svg"
-                alt="Keep Me Out Logo"
+                src={ASSETS.LOGO}
+                alt={UI_TEXT.alt.logo}
                 className="w-8 h-8"
               />
-              <span className="text-xl font-bold text-gray-900">Keep Me Out</span>
+              <span className="text-xl font-bold text-gray-900">{APP_CONFIG.NAME}</span>
             </Link>
             
-            <Link href="/" className="flex items-center space-x-2 text-gray-600 hover:text-primary-500 transition-colors">
+            <Link href="/" className="flex items-center space-x-2 link-primary">
               <ArrowLeft className="w-4 h-4" />
-              <span>Back to Home</span>
+              <span>{UI_TEXT.buttons.backToHome}</span>
             </Link>
           </div>
         </div>
@@ -39,19 +41,19 @@ export default function PrivacyPage() {
       <section className="section-padding">
         <div className="max-w-4xl mx-auto">
           <motion.div 
-            className="bg-white rounded-2xl shadow-lg p-8 md:p-12"
+            className="card-white"
             {...fadeInUp}
           >
-            <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Privacy Policy</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">{UI_TEXT.pages.privacy.title}</h1>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-lg mb-8">
-                <strong>Keep Me Out</strong> as a free application which is ad-supported with an in-app purchases to remove ads from app. This Service is provided by <strong>Vikesh Dass</strong> at almost no cost and is intended for use as is. If you choose to use these Service, then you agree to the policies defined here. I will not use or share your information with anyone except as described in this Privacy Policy.
+                <strong>{APP_CONFIG.NAME}</strong> as a free application which is ad-supported with an in-app purchases to remove ads from app. This Service is provided by <strong>{APP_CONFIG.AUTHOR}</strong> at almost no cost and is intended for use as is. If you choose to use these Service, then you agree to the policies defined here. I will not use or share your information with anyone except as described in this Privacy Policy.
               </p>
 
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Information Collection and Usage</h2>
               <p className="mb-8">
-                For a better experience while using these Service, Keep Me Out may require you to provide <strong>Read Contacts</strong> permission which will only be <strong>used to read user's contacts so as to allow user to make an emergency call</strong> while the Keep Me Out Service for device lock is running. Keep me out doesn't store these contacts anywhere permanently neither does it upload this information anywhere. Its strictly fetched while the application runs and is cleared as soon as the user exits the application. Please note this app does use third party services that may collect information used to identify you.
+                For a better experience while using these Service, {APP_CONFIG.NAME} may require you to provide <strong>Read Contacts</strong> permission which will only be <strong>used to read user's contacts so as to allow user to make an emergency call</strong> while the {APP_CONFIG.NAME} Service for device lock is running. {APP_CONFIG.NAME} doesn't store these contacts anywhere permanently neither does it upload this information anywhere. Its strictly fetched while the application runs and is cleared as soon as the user exits the application. Please note this app does use third party services that may collect information used to identify you.
               </p>
 
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Third party Service Providers used in this application</h2>
@@ -69,20 +71,20 @@ export default function PrivacyPage() {
               <p className="mb-8">
                 If you have any questions or comments about this Privacy Policy, please contact me at{' '}
                 <a 
-                  href="mailto:keepmeout.help@gmail.com" 
+                  href={EXTERNAL_LINKS.CONTACT_EMAIL} 
                   className="text-primary-500 hover:text-primary-600 font-medium inline-flex items-center space-x-1"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>keepmeout.help@gmail.com</span>
+                  <span>{APP_CONFIG.CONTACT_EMAIL}</span>
                 </a>{' '}
                 or click 'Contact for support' within app options menu at the{' '}
                 <a 
-                  href="https://play.google.com/store/apps/details?id=vikesh.dass.lockmeout" 
+                  href={EXTERNAL_LINKS.GOOGLE_PLAY} 
                   className="text-primary-500 hover:text-primary-600 font-medium inline-flex items-center space-x-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Keep Me Out Google Playstore page</span>
+                  <span>{APP_CONFIG.NAME} Google Playstore page</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>.
               </p>
@@ -92,21 +94,21 @@ export default function PrivacyPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white section-padding">
-        <div className="max-w-7xl mx-auto text-center">
+      <footer className="footer-dark section-padding">
+        <div className="container-max text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <img
-              src="/logo.svg"
-              alt="Keep Me Out Logo"
+              src={ASSETS.LOGO}
+              alt={UI_TEXT.alt.logo}
               className="w-8 h-8"
             />
-            <span className="text-xl font-bold">Keep Me Out</span>
+            <span className="text-xl font-bold">{APP_CONFIG.NAME}</span>
           </div>
           <p className="text-gray-400 mb-4">
-            Take control of your digital life with privacy-first design and powerful focus tools.
+            {UI_TEXT.footer.tagline}
           </p>
           <p className="text-gray-500">
-            &copy; {new Date().getFullYear()} Keep Me Out by Vikesh Dass. All rights reserved.
+            &copy; {new Date().getFullYear()} {APP_CONFIG.NAME} by {APP_CONFIG.AUTHOR}. All rights reserved.
           </p>
         </div>
       </footer>

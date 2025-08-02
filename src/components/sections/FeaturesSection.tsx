@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Section from '@/components/ui/Section'
 import FeatureCard from '@/components/ui/FeatureCard'
 import { FEATURES } from '@/data/features'
+import { UI_TEXT } from '@/config/ui'
 
 const FeaturesSection: React.FC = () => {
   const staggerContainer = {
@@ -24,11 +25,11 @@ const FeaturesSection: React.FC = () => {
   return (
     <Section id="features" background="white" padding="lg">
       <motion.div className="text-center mb-16" {...fadeInUp}>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Powerful Features for Digital Wellness
+        <h2 className="heading-section mb-4">
+          {UI_TEXT.features.title}
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Everything you need to build healthier digital habits and stay focused on what matters most.
+        <p className="text-subtitle max-w-2xl mx-auto">
+          {UI_TEXT.features.subtitle}
         </p>
       </motion.div>
       

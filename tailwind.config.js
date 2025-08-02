@@ -5,7 +5,11 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
     extend: {
       colors: {
         primary: {
@@ -27,9 +31,6 @@ module.exports = {
           500: '#f59e0b',
           600: '#d97706',
         }
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.6s ease-out',

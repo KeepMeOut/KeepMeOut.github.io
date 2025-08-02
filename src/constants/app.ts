@@ -4,7 +4,7 @@ export const APP_CONFIG = {
   DESCRIPTION: 'Lock your phone to focus, study, and reconnect with what truly matters. Emergency calling, usage tracking, and privacy-first design.',
   AUTHOR: 'Vikesh Dass',
   VERSION: '1.0.0',
-  CONTACT_EMAIL: 'keepmeout.help@gmail.com',
+  CONTACT_EMAIL: 'kmo-support@googlegroups.com',
   GOOGLE_PLAY_URL: 'https://play.google.com/store/apps/details?id=vikesh.dass.lockmeout',
   WEBSITE_URL: 'https://keepmeout.app',
 } as const
@@ -25,20 +25,21 @@ export const EXTERNAL_LINKS = {
 } as const
 
 export const ASSETS = {
-  LOGO: '/logo.svg',
-  LOGO_BLACK: '/logo-black.svg',
-  LOGO_ICON: '/logo-icon.svg',
-  FAVICON: '/favicon.ico',
+  LOGO: '/assets/logos/logo_icon.svg',
+  LOGO_BLACK: '/assets/logos/logo-black.svg',
+  LOGO_ICON: '/assets/logos/logo_icon.svg',
+  LOGO_ICON_PNG: '/assets/logos/logo_icon.png',
+  FAVICON: '/favicon.svg',
   SCREENSHOTS: {
-    QUICK_LOCK: '/keepmeout-quicklock.webp',
-    SCHEDULE: '/keepmeout-schedule.webp',
+    QUICK_LOCK: '/assets/images/keepmeout-quicklock.webp',
+    SCHEDULE: '/assets/images/keepmeout-schedule.webp',
   },
   ICONS: {
-    FEATURE_01: '/feature-tile-icon-01.svg',
-    FEATURE_02: '/feature-tile-icon-02.svg',
-    FEATURE_03: '/feature-tile-icon-03.svg',
-    FEATURE_04: '/feature-tile-icon-04.svg',
-    FEATURE_05: '/feature-tile-icon-05.svg',
-    FEATURE_06: '/feature-tile-icon-06.svg',
+    FEATURE_01: '/assets/icons/feature-tile-icon-01.svg',
+    FEATURE_02: '/assets/icons/feature-tile-icon-02.svg',
+    FEATURE_03: '/assets/icons/feature-tile-icon-03.svg',
+    FEATURE_04: '/assets/icons/feature-tile-icon-04.svg',
+    FEATURE_05: '/assets/icons/feature-tile-icon-05.svg',
+    FEATURE_06: '/assets/icons/feature-tile-icon-06.svg',
   },
 } as const
