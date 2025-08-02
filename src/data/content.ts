@@ -1,4 +1,5 @@
 import { Step, Benefit, FAQItem, TroubleshootingItem } from '@/types'
+import { APP_CONFIG } from '@/constants/app'
 
 export const HOW_IT_WORKS_STEPS: Step[] = [
   {
@@ -103,7 +104,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'bug-reporting',
     question: 'I have encountered a bug/problem with your app, where can I report it?',
-    answer: 'Please write a short description of your problem to kmo-support@googlegroups.com. Please be aware that due to the amount of mail we get, a reply may take some time.',
+    answer: `Please write a short description of your problem to ${APP_CONFIG.CONTACT_EMAIL}. Please be aware that due to the amount of mail we get, a reply may take some time.`,
   },
   {
     id: 'receiving-calls',
@@ -128,7 +129,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'feature-suggestions',
     question: 'I have a feature idea/suggestion for your app, where can I share it?',
-    answer: 'We welcome you to contact us at kmo-support@googlegroups.com. Please be aware that due to the amount of mail we get, a reply is not guaranteed and may take some time.',
+    answer: `We welcome you to contact us at ${APP_CONFIG.CONTACT_EMAIL}. Please be aware that due to the amount of mail we get, a reply is not guaranteed and may take some time.`,
   },
   {
     id: 'scheduled-lock-doze',

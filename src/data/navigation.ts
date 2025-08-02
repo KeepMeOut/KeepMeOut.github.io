@@ -1,5 +1,5 @@
 import { NavigationItem } from '@/types'
-import { ROUTES, EXTERNAL_LINKS } from '@/constants/app'
+import { ROUTES, EXTERNAL_LINKS, APP_CONFIG } from '@/constants/app'
 
 export const MAIN_NAVIGATION: NavigationItem[] = [
   {
@@ -53,7 +53,7 @@ export const FOOTER_NAVIGATION = {
   support: [
     {
       id: 'email',
-      label: 'keepmeout.help@gmail.com',
+      label: APP_CONFIG.CONTACT_EMAIL,
       href: EXTERNAL_LINKS.CONTACT_EMAIL,
       isExternal: true,
     },
