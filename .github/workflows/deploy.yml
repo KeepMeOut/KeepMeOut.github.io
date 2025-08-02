@@ -22,9 +22,13 @@ jobs:
         run: npm ci
 
       - name: Build
+<<<<<<< HEAD
         run: |
           npm run build
           npm run export
+=======
+        run: npm run build
+>>>>>>> refs/remotes/origin/feat/github-actions-deploy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
