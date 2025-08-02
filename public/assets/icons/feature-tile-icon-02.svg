@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#D7DDDD;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:8;}
+</style>
+<g id="Ebene_2_00000122704236748374683120000012402957843033448599_" class="st0">
+	<g id="Ebene_2_00000098197705911788952850000017416751865890436489_" class="st1">
+		<rect x="18" y="19.1" class="st2" width="28" height="28"/>
+	</g>
+</g>
+<g id="Ebene_1_00000026882142817231426590000003274882376405393084_">
+	<g id="Ebene_1_00000021100917229563143830000000405069243192434817_">
+		<g>
+			<circle class="st3" cx="32" cy="33.7" r="1.2"/>
+			<line class="st3" x1="32" y1="34.9" x2="32" y2="38.5"/>
+		</g>
+		<path class="st3" d="M22.7,24.3h18.5c0.5,0,0.9,0.4,0.9,0.9v16.8c0,0.5-0.4,0.9-0.9,0.9H22.7c-0.5,0-0.9-0.4-0.9-0.9V25.2
+			C21.9,24.7,22.2,24.3,22.7,24.3z"/>
+		<line class="st3" x1="26.3" y1="22.5" x2="26.3" y2="26.9"/>
+		<line class="st3" x1="37.7" y1="22.5" x2="37.7" y2="26.9"/>
+		<line class="st3" x1="21.9" y1="28.7" x2="42.1" y2="28.7"/>
+	</g>
+</g>
+</svg>
