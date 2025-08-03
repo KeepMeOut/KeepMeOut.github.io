@@ -40,11 +40,6 @@ export const FOOTER_NAVIGATION = {
       href: ROUTES.PRIVACY,
     },
     {
-      id: 'app-ads',
-      label: 'App-ads.txt',
-      href: '/app-ads.txt',
-    },
-    {
       id: 'changelog',
       label: 'Changelog',
       href: EXTERNAL_LINKS.CHANGELOG,
