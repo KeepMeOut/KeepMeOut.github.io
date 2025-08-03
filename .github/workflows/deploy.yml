@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 
-# Updated with proper permissions
+# Updated with SSH deploy key
 on:
   push:
     branches:
