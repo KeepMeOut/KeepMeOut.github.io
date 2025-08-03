@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 
+# Updated with proper permissions
 on:
   push:
     branches:
