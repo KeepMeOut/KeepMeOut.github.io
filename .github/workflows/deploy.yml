@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - feat/github-actions-deploy
+      - feature/fix_config
 
 permissions:
   contents: read
